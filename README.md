@@ -19,7 +19,7 @@ Users can add tasks, remove tasks by clicking them, and their list persists in l
 
 Here’s how the app looks:
 
-![To-Do List Screenshot](./assets/ToDoList_ScreenShot.png)
+![To-Do List Screenshot](src/assets/ToDoList_ScreenShot.png)
 
 
 ---
