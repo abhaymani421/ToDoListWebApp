@@ -13,7 +13,7 @@ dist
 dist-ssr
 
 # Vite cache
-.vite
+.vite/
 
 # Local environment files
 *.local
