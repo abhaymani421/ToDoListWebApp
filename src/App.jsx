@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ToDoItem from "./Components/ToDoItem";
+import ToDoItem from "./components/ToDoItem";
 
 function App() {
   const [inputText, setInputText] = useState("");
