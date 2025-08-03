@@ -30,7 +30,7 @@ function App() {
     var val = inputText.trim();
     if (val !== "") {
       setItems((prevItems) => {
-        return [...prevItems, inputText];
+        return [...prevItems, {text: inputText, checked: false}];
       });
     }
     setInputText("");
@@ -42,6 +42,14 @@ function App() {
         return index !== id;
       });
     });
+  }
+
+  function checkItem(id, newState) {
+    setItems((prevItems) => {
+      return prevItems.map((todoItem, index) => {
+        return index === id ? {...todoItem, checked: newState} : todoItem
+      })
+    })
   }
 
   return (
@@ -61,8 +69,9 @@ function App() {
             <ToDoItem
               key={index}
               id={index}
-              text={todoItem}
-              onChecked={deleteItem}
+              text={todoItem.text}
+              checked={todoItem.checked}
+              checkItem={checkItem}
             />
           ))}
         </ul>

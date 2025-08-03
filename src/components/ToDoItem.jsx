@@ -1,11 +1,8 @@
-function ToDoItem(props) {
+function ToDoItem({ id, text, checked, checkItem }) {
     return (
-        <div
-            onClick={() => {
-                props.onChecked(props.id);
-            }}
-        >
-            <li>{props.text}</li>
+        <div>
+            <input type="checkbox" id={id} onChange={(e) => checkItem(id, e.target.checked)} checked={checked}/>
+            <label htmlFor={id}>{text}</label>
         </div>
     );
 }
