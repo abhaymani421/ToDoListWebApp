@@ -72,8 +72,11 @@ button span {
   border: 2px solid hsl(198, 1%, 29%);
 }
 
-li {
-  text-align: left;
-  position: relative;
-  padding: 0.5rem;
+.deleteBtn {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.todoTextLabel {
+  user-select: none;
 }

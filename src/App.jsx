@@ -72,6 +72,7 @@ function App() {
               text={todoItem.text}
               checked={todoItem.checked}
               checkItem={checkItem}
+              deleteItem={deleteItem}
             />
           ))}
         </ul>
