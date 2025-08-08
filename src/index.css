@@ -26,12 +26,14 @@ body {
   padding: 1rem;
   box-sizing: border-box;
 }
+
 .heading {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
 }
+
 .heading h1 {
   transform: rotate(2deg);
   padding: 0.2rem 1.2rem;
@@ -72,8 +74,38 @@ button span {
   border: 2px solid hsl(198, 1%, 29%);
 }
 
-li {
-  text-align: left;
-  position: relative;
-  padding: 0.5rem;
+.todoList {
+  padding-inline: 0.8rem;
+}
+
+.todoItem {
+  display: flex;
+  padding: 0.2rem;
+
+}
+
+.checkboxWrapper {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+
+.checkboxWrapper input,
+.deleteBtn
+{
+  cursor: pointer;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  background-color: inherit;
+}
+
+.deleteIcon {
+  font-size: 30px !important;
+  color: rgb(171, 0, 0);
+}
+
+.deleteIcon:hover {
+  opacity: 0.8;
 }
