@@ -64,7 +64,7 @@ function App() {
         </button>
       </div>
       <div>
-        <ul>
+        <ul className='todoList'>
           {items.map((todoItem, index) => (
             <ToDoItem
               key={index}
